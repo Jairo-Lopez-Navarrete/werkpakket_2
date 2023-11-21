@@ -1,0 +1,24 @@
+@use "_base.scss" as *;
+
+.arrow-div {
+  @include layout();
+  margin-left: 5rem;
+  margin-top: 5rem;
+
+  .arrow {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: $white;
+    color: $primary-color;
+
+    i {
+      font-size: 1.7rem;
+    }
+
+    &:hover {
+      background-color: $tertiary-color;
+      color: $white;
+    }
+  }
+
+}

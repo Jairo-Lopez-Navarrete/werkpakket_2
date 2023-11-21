@@ -1,0 +1,60 @@
+@use "_base.scss" as *;
+
+.filter{
+  width: 100%;
+  z-index: 10;
+  background-color: $secondary-color;
+  box-shadow: 0 10px 10px 5px rgba(63, 63, 63, 0.76);
+  padding: 2rem;
+  display: inline-block;
+  margin: 9rem 0 2rem 0;
+  flex-wrap: wrap;
+
+  form{
+    display: flex;
+  }
+
+  .filter-form{
+    @include layout(normal);
+    flex-direction: row;
+    font-size: 1rem;
+  }
+
+  label, input{
+    margin: 0.5rem;
+    @include layout();
+    flex-direction: row;
+  }
+
+  label{
+    @include paragraph();
+  }
+
+  input{
+    transform: scale(1.5);
+  }
+
+  .row{
+    @include layout(space-evenly);
+    flex-direction: row;
+    font-size: 1rem;
+  }
+}
+
+
+@media only screen and (max-device-width: $iphone){
+  .overzichts_titel{
+    margin-top: 12rem;
+  }
+  section{
+    @include layout(flex-start);
+    flex-direction: row-reverse;
+  }
+  .filter{
+    @include layout(flex-start);
+    width: 15rem;
+    flex-direction: row-reverse;
+    border-radius: 1rem 0 0 1rem;
+    margin-top: 12rem;
+  }
+}

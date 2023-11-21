@@ -1,0 +1,67 @@
+@use "_base.scss" as *;
+
+.navbar{
+  box-shadow: 0 5px 10px 0 $shadow-2;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  @include layout(space-between);
+  padding: 2rem;
+  background-color: $tertiary-color-less;
+  border-radius: 0;
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 0;
+
+  a{
+    text-decoration: none;
+    @include title();
+    color: $white;
+  }
+
+  .main{
+    @include title();
+    color: $white;
+    text-decoration: none;
+  }
+
+  .list{
+    @include layout();
+    flex-direction: row;
+  }
+
+  .list-item{
+    @include layout();
+    margin: 0 2rem;
+  }
+
+  .list-link{
+    @include layout();
+    @include paragraph(1.5rem);
+    color: $white;
+    text-decoration: none;
+  }
+
+  .logo{
+    background-color: $primary-color;
+    padding: 0.7rem;
+    margin: 0 0.5rem 0 0;
+    border-radius: 10rem;
+    color: $white;
+    font-size: 2rem;
+    &:hover{
+      transition: 0.3s linear;
+      background-color: $secondary-color;
+      color: $tertiary-color;
+    }
+  }
+}
+
+@media only screen and (max-device-width: $iphone){
+  .navbar{
+    @include layout();
+    margin: 0.5rem;
+    flex-direction: column;
+  }
+}

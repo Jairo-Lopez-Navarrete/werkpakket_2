@@ -1,0 +1,37 @@
+@use "_base.scss" as *;
+
+.reclame{
+  margin: 3rem 2rem;
+  border-radius: 1.5rem;
+  background-image: url("assets/img_2.png");
+  background-repeat: no-repeat;
+  width: 60rem;
+  background-size: cover;
+  padding: 10rem 3rem;
+  @include layout(flex-start);
+  flex-direction: row;
+  box-shadow: 0 10px 10px 0 $shadow-1;
+
+
+
+  .background-div{
+    background-color: $primary-color;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    position: relative;
+    right: 2rem;
+    top: 5rem;
+    flex-direction: column;
+  }
+  h2{
+    color: $white;
+    @include title();
+  }
+}
+
+@media only screen and (max-device-width: $iphone){
+  .reclame{
+    display: none;
+  }
+}

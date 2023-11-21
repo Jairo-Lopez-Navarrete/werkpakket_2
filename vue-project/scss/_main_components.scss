@@ -1,0 +1,49 @@
+@use "_base.scss" as *;
+
+.body_elements{
+  color: $primary-color;
+  @include layout();
+  flex-direction: column;
+}
+
+.main_header{
+  @include layout(space-around, start);
+  flex-direction: column;
+  width: 100%;
+  padding: 11rem 6.7rem 13rem 6.7rem;
+
+  background-image: url("assets/img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .text-background{
+    @include layout();
+    flex-direction: column;
+    background-color: #181818;
+    opacity: 70%;
+    padding: 1rem;
+    border-radius: 1rem;
+    z-index: 40;
+  }
+
+  h2, p{
+    margin: 1.5rem 0;
+    z-index: 39;
+    color: $white;
+  }
+  h2{
+    @include title();
+  }
+  p{
+    @include paragraph();
+    width: 50rem;
+  }
+}
+
+@media only screen and (max-device-width: $iphone){
+  .main_header{
+    position: unset;
+    height: 130rem;
+  }
+}

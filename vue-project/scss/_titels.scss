@@ -1,0 +1,9 @@
+@use '_base.scss' as *;
+
+.overzichts_titel{
+  @include position(10rem);
+  @include title(1.5rem);
+  color: $primary-color;
+  letter-spacing: 0.3rem;
+  padding: 2.5rem;
+}

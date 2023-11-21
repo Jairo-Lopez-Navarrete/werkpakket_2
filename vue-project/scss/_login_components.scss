@@ -1,0 +1,110 @@
+@use "_base.scss" as *;
+
+.body_elements_login{
+  background-color: $primary-color;
+  @include layout(space-between, start);
+  background-image: url("assets/img_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background-info {
+  margin: 2.5rem 4rem;
+  border-radius: 1.5rem;
+  @include layout(space-around);
+  flex-direction: column;
+  padding: 3rem;
+  width: 40rem;
+  height: 40rem;
+  background: rgba(214, 40, 57, 0.22);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(214, 40, 57, 0.34);
+
+  h1 {
+    color: $white;
+    margin: 1rem;
+    @include title(2.5rem);
+    @include textStyles(normal, 700);
+  }
+
+  form {
+    @include layout();
+    flex-direction: column;
+  }
+
+  input {
+    margin: 1rem;
+    font-size: 1.3rem;
+    border-radius: 3rem;
+    width: 20rem;
+    height: 3rem;
+    border: none;
+    padding: 0.5rem;
+    box-shadow: 0 5px 10px 0 rgba(82, 1, 1, 0.88);
+  }
+
+  .list {
+    list-style-type: none;
+    @include layout();
+    flex-direction: column;
+  }
+
+  .list-item {
+    opacity: 100%;
+    font-family: $secondary-font;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+
+    .login {
+      text-decoration: none;
+    }
+
+    .registreer {
+      text-decoration: none;
+      background-color: $white;
+      color: $black;
+      border-radius: 2rem;
+      padding: 1rem;
+    }
+
+    &-link {
+      color: $white;
+    }
+
+    &:hover {
+      color: $white;
+      opacity: 60%;
+    }
+  }
+}
+
+@media only screen and (max-device-width: $ipad){
+  .body_elements_login{
+    @include layout(start, flex-start);
+    flex-direction: column;
+    background-image: url("assets/img_6.png");
+    background-size: 100%;
+    .background-info{
+      margin-top: 10rem;
+    }
+  }
+}
+
+@media only screen and (max-device-width: $iphone){
+  .body_elements_login{
+    @include layout(start, flex-start);
+    flex-direction: column;
+    background-image: url("assets/img_6.png");
+    background-size: 135%;
+    .background-info{
+      margin: 10rem 0 0 12rem;
+      width: 55rem;
+      height: 60rem;
+    }
+    .background-info input{
+      height: 4rem;
+    }
+  }
+}

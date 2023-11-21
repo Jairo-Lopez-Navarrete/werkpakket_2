@@ -1,0 +1,93 @@
+@use "_base.scss" as *;
+
+article{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .gallery{
+    width: 25%;
+    @include layout();
+  }
+
+  .card {
+    @include layout();
+    margin: 0;
+    width: 20rem;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+
+    &:hover .card-overlay {
+      left: 0;
+    }
+
+    &-overlay {
+      @extend %fullSpace;
+      @include layout();
+      position: absolute;
+      top: 0;
+      left: -100%;
+      background-color: rgba($primary-color, .5);
+      color: $white;
+      z-index: 1;
+      flex-direction: column;
+      transition: left .7s;
+
+      &-heading {
+        @include textStyles(capitalize);
+        @include title();
+        text-align: center;
+      }
+
+      &-paragraph {
+        @include textStyles(capitalize);
+        @include paragraph();
+        margin-bottom: 1rem;
+      }
+
+      &-button {
+        width: 150px;
+        height: 40px;
+        color: $white;
+        background-color: $primary-color;
+        font-family: $secondary-font;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: 0;
+        border-radius: 1.5rem;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+          transition: linear 0.3s;
+          border: 2px solid $white;
+          color: $white;
+          background-color: $tertiary-color;
+        }
+      }
+    }
+
+    &-image {
+      @extend %fullSpace;
+      height: 30rem;
+      width: auto;
+      object-fit: contain;
+      padding: 0.5rem;
+    }
+  }
+}
+
+@media only screen and (max-device-width: $iphone){
+  article{
+    @include layout();
+    flex-direction: row;
+    margin: 0;
+    .gallery{
+      width: 50%;
+      @include layout();
+    }
+  }
+}
