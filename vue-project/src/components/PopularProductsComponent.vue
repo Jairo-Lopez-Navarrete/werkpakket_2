@@ -4,7 +4,7 @@
       <div class="card-wrapper">
         <div class="card">
           <div class="card-overlay">
-            <h1 class="card-overlay-heading">ESP Eaglecaster58E11</h1>
+            <h1 class="card-overlay-heading">ESP era5S11</h1>
             <p class="card-overlay-paragraph">Prijs: €15 000</p>
             <button class="card-overlay-button">Meer info</button>
           </div>
@@ -53,6 +53,10 @@
 
 <script>
 export default {
+  props: [
+      'name',
+      'price'
+  ],
   name: "PopularProductsComponent"
 }
 </script>
