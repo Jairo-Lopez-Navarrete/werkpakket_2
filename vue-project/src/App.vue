@@ -1,17 +1,21 @@
 <script>
-//script was eerst leeg gwn en de views in src was er ook niet
-import HeaderComponent from './views/HeaderComponent.vue';
+//script was eerst leeg gwn en de components in src was er ook niet
+import HeaderComponent from './components/HeaderComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
+import NavComponent from './components/NavComponent.vue';
 
 export default{
   components: {
+    NavComponent,
     HeaderComponent,
+    FooterComponent,
   },
 }
 </script>
 
 <template>
   <div class="body_elements">
-    <nav class="navbar">
+    <!--<nav class="navbar">
       <a href="index.html">Strings Of Fire</a>
       <ul class="list">
         <li class="list-item"><a class="list-link" href="overzichtspagina.html"><i
@@ -19,9 +23,10 @@ export default{
         <li class="list-item"><a class="list-link" href="login.html"><i class="user logo fa-solid fa-user"></i></a></li>
         <li class="list-item"><a class="list-link" href="#"><i class="user logo fa-brands fa-shopify"></i></a></li>
       </ul>
-    </nav>
+    </nav>-->
+    <NavComponent/>
 
-    <header class="main_header">
+    <!--<header class="main_header">
       <div class="text-background">
         <h2>Over Strings Of Fire</h2>
         <p>Welkom bij Strings of Fire, jouw online bestemming voor gitaren en muziekaccessoires. Wij zijn toegewijd
@@ -35,7 +40,9 @@ export default{
           visie realiseren en een blijvende verbinding opbouwen met onze gemeenschap van muzikanten. Ontdek onze
           collectie en laat de muziek samenkomen!</p>
       </div>
-    </header>
+    </header>-->
+
+    <HeaderComponent/>
 
     <section class="reclame">
       <div class="layout">
@@ -146,7 +153,9 @@ export default{
         </div>
       </section>
     </article>
-    <footer>
+
+    <FooterComponent/>
+    <!--<footer>
       <div class="div1">
         <a href="#"><i class="fa-brands fa-facebook"></i>Strings Of Fire</a>
         <a href="#"><i class="fa-brands fa-instagram"></i>Strings Of Fire</a>
@@ -173,7 +182,7 @@ export default{
           <li>Zondag: Gesloten</li>
         </ul>
       </div>
-    </footer>
+    </footer>-->
   </div>
 </template>
 
