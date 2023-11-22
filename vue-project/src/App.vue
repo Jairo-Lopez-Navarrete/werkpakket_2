@@ -1,5 +1,12 @@
 <script>
+//script was eerst leeg gwn en de views in src was er ook niet
+import HeaderComponent from './views/HeaderComponent.vue';
 
+export default{
+  components: {
+    HeaderComponent,
+  },
+}
 </script>
 
 <template>
