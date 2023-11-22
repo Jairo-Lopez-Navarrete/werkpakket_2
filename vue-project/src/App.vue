@@ -11,7 +11,7 @@ export default{
 
 <template>
   <div class="body_elements">
-    <nav class="navbars">
+    <nav class="navbar">
       <a href="index.html">Strings Of Fire</a>
       <ul class="list">
         <li class="list-item"><a class="list-link" href="overzichtspagina.html"><i
