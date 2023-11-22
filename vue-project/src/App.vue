@@ -3,11 +3,13 @@
 import HeaderComponent from './components/HeaderComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import NavComponent from './components/NavComponent.vue';
+import PopularProductsComponent from "./components/PopularProductsComponent.vue";
 
 export default{
   components: {
     NavComponent,
     HeaderComponent,
+    PopularProductsComponent,
     FooterComponent,
   },
 }
@@ -53,69 +55,8 @@ export default{
       </div>
     </section>
 
-    <article>
-      <section class="gallery">
-        <div class="card-wrapper">
-          <div class="card">
-            <div class="card-overlay">
-              <h1 class="card-overlay-heading">Ibanez 3500X (small)</h1>
-              <p class="card-overlay-paragraph">Prijs: €500</p>
-              <a href="detailpagina.html">
-                <button class="card-overlay-button" onclick="">Meer info</button>
-              </a>
-            </div>
-            <img src="assets/guitar.png" alt="guitar1" class="card-image">
-          </div>
-        </div>
-      </section>
-      <section class="gallery">
-        <div class="card-wrapper">
-          <div class="card">
-            <div class="card-overlay">
-              <h1 class="card-overlay-heading">Pacifica Eg350</h1>
-              <p class="card-overlay-paragraph">Prijs: €300</p>
-              <button class="card-overlay-button">Meer info</button>
-            </div>
-            <img src="assets/guitar-2.png" alt="guitar2" class="card-image">
-          </div>
-        </div>
-      </section>
-      <section class="gallery">
-        <div class="card-wrapper">
-          <div class="card">
-            <div class="card-overlay">
-              <h1 class="card-overlay-heading">Squier stratocaster</h1>
-              <p class="card-overlay-paragraph">Prijs: €450</p>
-              <button class="card-overlay-button">Meer info</button>
-            </div>
-            <img src="assets/guitar-3.png" alt="guitar3" class="card-image">
-          </div>
-        </div>
-      </section>
-      <section class="gallery">
-        <div class="card-wrapper">
-          <div class="card">
-            <div class="card-overlay">
-              <h1 class="card-overlay-heading">Ibanez XRI 1 (Gold)</h1>
-              <p class="card-overlay-paragraph">Prijs: €4500</p>
-              <button class="card-overlay-button">Meer info</button>
-            </div>
-            <img src="assets/guitar-4.png" alt="guitar5" class="card-image">
-          </div>
-        </div>
-      </section>
-      <section class="gallery">
-        <div class="card-wrapper">
-          <div class="card">
-            <div class="card-overlay">
-              <h1 class="card-overlay-heading">ESP 3AgL3</h1>
-              <p class="card-overlay-paragraph">Prijs: €1100</p>
-              <button class="card-overlay-button">Meer info</button>
-            </div>
-            <img src="assets/guitar-T.png" alt="guitar6" class="card-image">
-          </div>
-        </div>
-      </section>
+    <PopularProductsComponent/>
+    <!--<article>
       <section class="gallery">
         <div class="card-wrapper">
           <div class="card">
@@ -152,7 +93,7 @@ export default{
           </div>
         </div>
       </section>
-    </article>
+    </article>-->
 
     <FooterComponent/>
     <!--<footer>
