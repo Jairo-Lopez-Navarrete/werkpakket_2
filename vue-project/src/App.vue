@@ -4,9 +4,19 @@ import HeaderComponent from './components/HeaderComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import NavComponent from './components/NavComponent.vue';
 import PopularProductsComponent from "./components/PopularProductsComponent.vue";
+import DetailPaginaView from "./views/DetailPaginaView.vue";
+import LoginView from "./views/LoginView.vue";
+import OverzichtsPaginaView from "./views/OverzichtsPaginaView.vue";
 import data from './json/data.json';
 
 export default{
+
+  views: {
+    DetailPaginaView,
+    LoginView,
+    OverzichtsPaginaView
+  },
+
   components: {
     NavComponent,
     HeaderComponent,
