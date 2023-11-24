@@ -133,8 +133,8 @@
 </template>
 
 <script>
-import FooterComponent from "../components/FooterComponent";
-import NavComponent from "../components/NavComponent";
+import FooterComponent from "../components/FooterComponent.vue";
+import NavComponent from "../components/NavComponent.vue";
 export default {
   name: "OverzichtsPaginaView",
   components: {
