@@ -4,7 +4,7 @@ import HeaderComponent from './components/HeaderComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import NavComponent from './components/NavComponent.vue';
 import PopularProductsComponent from "./components/PopularProductsComponent.vue";
-//@/assets/guitar.png
+import data from './json/data.json';
 
 export default{
   components: {
