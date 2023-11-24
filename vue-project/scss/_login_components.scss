@@ -3,7 +3,7 @@
 .body_elements_login{
   background-color: $primary-color;
   @include layout(space-between, start);
-  background-image: url("assets/img_1.png");
+  background-image: url("@/assets/img_1.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -84,7 +84,7 @@
   .body_elements_login{
     @include layout(start, flex-start);
     flex-direction: column;
-    background-image: url("assets/img_6.png");
+    background-image: url("@/assets/img_6.png");
     background-size: 100%;
     .background-info{
       margin-top: 10rem;
@@ -96,7 +96,7 @@
   .body_elements_login{
     @include layout(start, flex-start);
     flex-direction: column;
-    background-image: url("assets/img_6.png");
+    background-image: url("@/assets/img_6.png");
     background-size: 135%;
     .background-info{
       margin: 10rem 0 0 12rem;
