@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import {} from 'vue-router'
 
 import DetailPaginaView from "../views/DetailPaginaView.vue";
 //import LoginView from "../views/LoginView.vue";
@@ -12,11 +12,11 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Home',
     },
     {
-      path: '/Detail',
-      name: 'detail',
+      path: '/detail',
+      name: 'Detail',
       component: DetailPaginaView.vue
       //route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -24,8 +24,8 @@ const router = createRouter({
       //component: () => import('../components/AboutView.vue')
     },
     {
-      path: '/Login',
-      name: 'login',
+      path: '/login',
+      name: 'Login',
       component: LoginView.vue
       //route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -33,8 +33,8 @@ const router = createRouter({
       //component: () => import('../components/AboutView.vue')
     },
     {
-      path: '/Overzicht',
-      name: 'overzicht',
+      path: '/overzicht',
+      name: 'Overzicht',
       component: OverzichtsPaginaView.vue
       //route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
