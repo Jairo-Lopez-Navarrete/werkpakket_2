@@ -52,7 +52,17 @@
 </template>
 
 <script>
+
+import data from '@/json/data.json';
+
 export default {
+
+   data(){
+     return {
+       myJson: json
+     }
+   },
+
   producten: [
     {
       id: 1,

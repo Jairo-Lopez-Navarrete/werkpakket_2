@@ -7,9 +7,14 @@ import PopularProductsComponent from "./components/PopularProductsComponent.vue"
 import DetailPaginaView from "./views/DetailPaginaView.vue";
 import LoginView from "./views/LoginView.vue";
 import OverzichtsPaginaView from "./views/OverzichtsPaginaView.vue";
-import data from './json/data.json';
+import data from '@/json/data.json';
 
 export default{
+  // data(){
+  //   return {
+  //     myJson: json
+  //   }
+  // },
 
   views: {
     DetailPaginaView,
