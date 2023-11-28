@@ -34,9 +34,9 @@
           <div class="card-overlay">
             <h1 class="card-overlay-heading">Ibanez 3500X (small)</h1>
             <p class="card-overlay-paragraph">Prijs: €500</p>
-            <a href="detailpagina.html">
+            <router-link to="/detail" class="list-link">
               <button class="card-overlay-button">Koop nu</button>
-            </a>
+            </router-link>
           </div>
           <img src="@/assets/guitar.png" alt="guitar1" class="card-image">
         </div>
