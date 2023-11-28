@@ -57,11 +57,11 @@
 
 export default {
 
-  data(){
-    return {
-      data: producten
-    }
-  },
+  //data(){
+    //return {
+      //data: producten
+    //}
+  //},
 
   /*props: [
       'name',
